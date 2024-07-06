@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>babashivabramhiji</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicondiet/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicondiet/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicondiet/favicon-16x16.png">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    nav .right ul li a {
+        transition: color 0.5s ease, transform 0.5s ease;
+    }
+    nav .right ul li a:hover {
+        color: #50C878;
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+    .login-page-left {
+        width: 50%;
+        height: 100%;
+    }
+
+    .login-page-right {
+        width: 50%;
+        height: 100%;
+    }
+
+    .login-bg-img {
+        width: 50%;
+    }
+
+    .back-button {
+        background-color: #007BFF;
+        color: white;
+        padding: 8px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    @media screen and (max-width: 762px) {
+        .login-page-left {
+            /* height: fit-content; */
+            width: 100%;
+            /* background-image: url('/images/hotel2/hotel2img2.jpeg'); */
+            background-size: cover;
+            background-position: center;
+           
+        }
+
+        .login-page-left h2 {
+            color: #50C878;
+            margin-top: 20px;
+            /* text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5); */
+        }
+
+        .login-page-left label {
+            color: #50C878;
+        }
+
+        .login-page-right {
+            width: 0%;
+            display: none;
+        }
+
+
+        .login-bg-img {
+            width: 0;
+        }
+
+    }
+
+    @media screen and (max-width: 400px) {
+        .back-button {
+            font-size: 12px;
+            padding: 5px 8px;
+        }
+    }
+
+    body::-webkit-scrollbar {
+        width: 0;
+    }
+</style>
+
+<body>
+    <!-- <button class="back-button" onclick="window.history.back()">
+        << Go Back</button> -->
+
+
+        <nav class="flex items-center justify-between px-6 py-3 border-b-2">
+
+            <div class="left">
+                <a href="/"><img class="h-[75px] object-cover" src="/images/baba shivbramhiji.png" alt=""></a>
+            </div>
+            <div class="right">
+                <ul class="flex gap-6 items-center  ">
+                    <li class="text-[#333333] font-bold"><a href="/">Home</a></li>
+                    <li class="text-[#333333] font-bold"><a href="/" id="about-btn">About</a></li>
+                    <li class="text-[#333333] font-bold"><a href="/gallery">Gallery</a></li>
+                    <li class="text-[#333333] font-bold"><a href="/contact">Contact</a></li>
+                    <li class="text-[#333333] font-bold"><a href="/login">Login</a></li>
+                    <!-- <h4><i id="menu-btn" class="ri-menu-line"></i></h4> -->
+                    <a class="text-[#333333] font-bold" href="/">Home</a>
+                </ul>
+            </div>
+
+        </nav>
+    <div class=" login-page flex w-full h-screen  ">
+        <div class="login-page-left bg-white pt-20 sm:pt-0 md:pt-20 lg:pt-0 p-8 rounded shadow-md flex flex-col items-center justify-center h-full">
+            <h2 class="text-2xl font-bold mt-10 mb-8 text-[#50C878] w-full text-center">Register Account</h2>
+            <form class="w-full " action="/register" method="POST">
+                <% if (error && error.length> 0) { %>
+                    <p class="flash-error"
+                        style="color: rgb(249, 18, 18); font-weight: 800; text-transform: capitalize; margin: 7px 0;">
+                        <%= error %>
+                    </p>
+                    <% } %>
+                        <div class="mb-5">
+                            <label for="email" class="font-semibold block mb-2 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                class="text-black w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-100 focus:border-blue-300"
+                                required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="username" class="font-semibold block mb-2 text-sm text-gray-600">Username</label>
+                            <input type="username" id="username" name="username" placeholder="Enter your username"
+                                class="text-black w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-100 focus:border-blue-300"
+                                required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="password" class="font-semibold block mb-2 text-sm text-gray-600">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password "
+                                class="text-black w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-100 focus:border-blue-300"
+                                required>
+                        </div>
+            
+                        <button type="submit"
+                            class="w-full py-2 px-4 border border-transparent rounded-md text-white bg-[#50C878] hover:bg-[#50C878] focus:bg-[#50C878] active:bg-[#50C878] transition duration-150 ease-in-out">Register</button>
+            </form>
+            <a class="mt-3 text-sm hover:text-[#50C878]" 
+                href="/login">Already Registered ? Login to your account
+            </a>
+        </div>
+        <div class="login-page-right login-bg-img" style="position: relative;">
+            <img src="/images/heroimg2.png" alt="login" class=" w-full h-full object-cover">
+            <h1 class="text-white font-bold "
+                style="position: absolute; top: 40%;left: 5%;width: 60%;font-size: 25px;text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5);">
+                </h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

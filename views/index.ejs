@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>babashivabramhiji</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/scrollToTop.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicondiet/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicondiet/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicondiet/favicon-16x16.png">
+</head>
+
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #494949;
+        opacity: 0.4;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+
+    .active-button {
+        background-color: #F49C08 !important;
+
+        transition: all ease 0.5s;
+    }
+
+    nav .right ul li a {
+        transition: color 0.5s ease, transform 0.5s ease;
+    }
+
+    nav .right ul li a:hover {
+        color: #50C878;
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+    .contract-button:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+}
+</style>
+
+<body>
+    <div class="main">
+        <nav class="flex items-center justify-between px-6 py-3 border-b-2">
+
+            <div class="left">
+                <a href="/"><img class="h-[75px] object-cover" src="/images/baba shivbramhiji.png" alt=""></a>
+            </div>
+            <div class="right">
+                <ul class="flex gap-6 items-center  ">
+                    <li class="text-[#333333] font-bold"><a href="/">Home</a></li>
+                    <li class="text-[#333333] font-bold"><a href="/" id="about-btn">About</a></li>
+                    <li class="text-[#333333] font-bold"><a href="/gallery">Gallery</a></li>
+                    <li class="text-[#333333] font-bold" id="contact-btn">Contact</li>
+                    <li class="text-[#333333] font-bold"><a href="/login">Login</a></li>
+                    <h4><i id="menu-btn" class="ri-menu-line"></i></h4>
+                </ul>
+            </div>
+
+        </nav>
+        <div id="slidebar">
+            <a href="/">Home</a>
+            <a href="/" id="about-btn">About</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/">Contact</a>
+            <!-- <a href="/register">Register</a> -->
+            <a href="/login">Login</a>
+        </div>
+        <div class="page-1 ">
+            <div class="page-1-content">
+                <h1 class="text-[40px] md:text-5xl lg:text-6xl font-bold text-[#50C878] leading-none"
+                    style="-webkit-text-stroke: .5px #ffff;text-shadow: .5px .5px #dadada ;">
+                    Better Nutrition, Better Lifestyle</h1>
+                <p class="text-[#F5F5F5] font-semibold " style="-webkit-text-stroke: .14px #000;">Transform your health
+                    with
+                    personalized nutrition plans. Expert guidance. Lasting results. Start your
+                    journey today. </p>
+
+                <a href="https://wa.me/7805806867?text=I%20would%20like%20to%20schedule%20an%20appointment."><button
+                        class="bounce text-white w-[fit-content] py-2 px-5 mt-2 font-semibold rounded-lg bg-[#50C878]">Appointment
+                        Now <i class="ri-arrow-down-double-line"></i></button></a>
+
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <img src="/images/heroimg1.png" alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/images/heroimg2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://img.freepik.com/fotos-gratis/moldura-vazia-branca-sobre-os-legumes-coloridos-no-pano-de-fundo-texturizado_23-2147885666.jpg?w=900"
+                            alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img src="/images/heroimg4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://i.pinimg.com/564x/57/40/2e/57402e0075676163079bcc9b4c6419b0.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="page-1-footer">
+                <div class="page-1-footer-item">
+                    <img src="/images/icons/icons8-appointment-100.png" alt="">
+                    <h2>Appointment </h2>
+                </div>
+                <div class="page-1-footer-item">
+                    <img src="/images/icons/icons8-diet-plan-96.png" alt="">
+                    <h2>Nutrition plan</h2>
+                </div>
+                <div class="page-1-footer-item">
+                    <img src="/images/icons/icons8-fitness-100.png" alt="">
+                    <h2>Training</h2>
+                </div>
+                <div class="page-1-footer-item">
+                    <img src="/images/icons/icons8-group-100.png" alt="">
+                    <h2>Programs</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="page-2">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#333333] leading-none">ABOUT US</h1>
+            <div class="page-2-content">
+                <div class="left">
+                    <img src="/images/dieticianClient.png" alt="">
+                </div>
+                <div class="right pt-4 flex flex-col items-start gap-6">
+                    <h1 class="text-[26px] font-bold  text-[#333333] font-bold">Welcome to Mr. Atul Tiwari Ji
+                        Nutrition!
+                    </h1>
+                    <p class="text-left text-16px md:text-[17px]">We are passionate about empowering you to achieve your
+                        health and
+                        wellness
+                        goals through
+                        personalized nutrition guidance. With a focus on evidence-based practices and a compassionate
+                        approach, we are here to support you on your journey to optimal health.</p>
+                    <p class="text-left text-16px md:text-[17px]">Our team of experienced dietitians understands that
+                        every
+                        individual is unique, which is why we
+                        tailor our recommendations to suit your specific needs and lifestyle. Whether you’re looking to
+                        manage a medical condition, improve athletic performance, or simply adopt healthier eating
+                        habits, we’re here to provide expert guidance and support every step of the way.
+                    </p>
+                    <p class="text-left text-16px md:text-[17px]"> At Mr. Atul Tiwari Ji Nutrition, we believe that food
+                        is medicine,
+                        and we’re committed to
+                        helping you harness the power of nutrition to live your best life. Get started on your path to
+                        wellness today!
+                    </p>
+                    <a href="https://wa.me/7805806867?text=I%20would%20like%20to%20schedule%20an%20appointment."><button
+                            class="bounce bg-[#50C878] text-white p-3 font-semibold rounded-lg mt-4">Contact
+                            Now</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-3">
+            <div class="left ">
+                <img src="/images/fresh-fruits-vegetables_23-2147778394.jpg" alt="">
+            </div>
+            <div class="right">
+                <h1 class="text-[23px] font-semibold">Elevate your wellness with tailored nutrition solutions.</h1>
+                <div class="page-3-items  flex flex-wrap justify-center gap-8 md:gap-16">
+                    <div class="page-3-icons flex flex-col items-center justify-center gap-2">
+                        <img src="/images/icons/icons8-weight-loss-64.png" alt="">
+                        <h3>Weight Loss</h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/icons/icons8-vegetarian-64.png" alt="">
+                        <h3>Vegetarian</h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/icons/icons8-organic-64.png" alt="">
+                        <h3>Organic</h3>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/icons/icons8-gain-weight-64.png" alt="">
+                        <h3>Weight Gain </h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/icons/icons8-fitness-100.png" alt="">
+                        <h3>Fitness </h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/icons/icons8-diet-plan-96.png" alt="">
+                        <h3>Diet Plan </h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/icons/icons8-detoxification-64.png" alt="">
+                        <h3>Detoxification</h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/icons/icons8-dietitian-64.png" alt="">
+                        <h3>Planner </h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="pricing-page">
+            <h1 class="text-[30px] font-bold mb-6 text-[#333333] font-bold">What We Do</h1>
+            <div class="flex justify-center flex-wrap gap-8 ">
+                <div
+                    class="w-[350px] h-[315px] border-2 rounded-lg bg-[#50C878] text-white flex flex-col justify-start items-center gap-3 pt-4 p-2">
+                    <img class="object-cover" src="/images/icons/icons8-gain-weight-64.png" alt="">
+                    <h1 class="font-bold">Weight Loss</h1>
+                    <h2 class="font-semibold">Our comprehensive approach combines personalized meal plans, expert
+                        guidance, and ongoing support to help you reach your goals effectively and sustainably.
+                        Transform your health and achieve lasting results with us. </h2>
+                </div>
+                <div
+                    class="w-[350px] h-[315px] border-2 rounded-lg bg-[#50C878] text-white flex flex-col justify-start items-center gap-3 pt-4 p-2">
+                    <img class="object-cover" src="/images/icons/icons8-gain-weight-64.png" alt="">
+                    <h1 class="font-bold">Weight Gain</h1>
+                    <h2 class="font-semibold">Our tailored nutrition plans focus on healthy, sustainable weight gain
+                        strategies. With personalized meal plans, expert guidance, and ongoing support, we'll help you
+                        achieve your goals and transform your body with confidence </h2>
+                </div>
+                <div
+                    class="w-[350px] h-[315px] border-2 rounded-lg bg-[#50C878] text-white flex flex-col justify-start items-center gap-3 pt-4 p-2">
+                    <img class="object-cover" src="/images/icons/icons8-gain-weight-64.png" alt="">
+                    <h1 class="font-bold">Diabetic Diet </h1>
+                    <h2 class="font-semibold">Our specialized diabetic diet plans are designed to stabilize blood sugar
+                        levels, promote overall health, and enhance quality of life. With personalized guidance and
+                        ongoing support, we'll empower you to take control of your health journey. </h2>
+                </div>
+                <div
+                    class="h-[370px] w-[350px] md:h-[315px] border-2 rounded-lg bg-[#50C878] text-white flex flex-col justify-start items-center gap-3 pt-4 p-2">
+                    <img class="object-cover" src="/images/icons/icons8-gain-weight-64.png" alt="">
+                    <h1 class="font-bold">Gym Diet </h1>
+                    <h2 class="font-semibold">Maximize Your Gym Performance with Our tailored to your fitness goals and
+                        activity levels, our expertly crafted gym diets optimize energy, muscle growth, and recovery.
+                        Fuel your workouts and achieve peak performance with our personalized guidance and support .
+
+                    </h2>
+                </div>
+                <div
+                    class="h-[370px] w-[350px] md:h-[315px] border-2 rounded-lg bg-[#50C878] text-white flex flex-col justify-start items-center gap-3 pt-4 p-2">
+                    <img class="object-cover" src="/images/icons/icons8-gain-weight-64.png" alt="">
+                    <h1 class="font-bold">1 Inch Loss </h1>
+                    <h2 class="font-semibold">Transform Your Body, One Inch at a Time. Our targeted diet plans are
+                        designed to help you shed inches and achieve your body goals. With personalized nutrition
+                        guidance and support, you'll see visible results and feel confident in your journey to a
+                        slimmer, healthier you. </h2>
+                </div>
+                <div
+                    class="h-[370px] w-[350px] md:h-[315px] border-2 rounded-lg bg-[#50C878] text-white flex flex-col justify-start items-center gap-3 pt-4 p-2">
+                    <img class="object-cover" src="/images/icons/icons8-gain-weight-64.png" alt="">
+                    <h1 class="font-bold">Virtual Consultations </h1>
+                    <h2 class="font-semibold">Experience Convenient and Personalized Nutrition Guidance from Anywhere.
+                        Our virtual consultations offer one-on-one support, tailored meal plans, and expert advice
+                        tailored to your unique needs and lifestyle. Start your journey to better health today, no
+                        matter where you are. </h2>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="contact-content">
+            <h1 class="text-3xl md:text-4xl  text-center font-bold mb-6">Contact Us</h1>
+            <div class="flex flex-col  md:flex-row justify-center items-center">
+                <div class="left md:w-1/2  text-white px-4">
+                    <h3 class="text-lg md:text-xl text-black text-center mb-4">Feel free to contact us for any queries
+                        or feedback👋</h3>
+                    <div class="bg-white h-80 p-4 rounded-md">
+                        <form action="https://sheetdb.io/api/v1/4gs4td7acjs3p" method="POST" id="sheetdb-form"
+                            class="flex flex-col  gap-8">
+                            <input type="text" name="data[name]" placeholder="Your Name"
+                                class="p-2 border rounded-md text-black" required>
+                            <input type="contact" name="data[contact]" placeholder="Your contact"
+                                class="p-2 border rounded-md text-black" required>
+                                <select name="data[service]" class="p-2 border rounded-md text-black" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Weight Loss">Weight Loss</option>
+                                    <option value="Weight Gain">Weight Gain</option>
+                                    <option value="Diabetic Diet">Diabetic Diet</option>
+                                    <option value="Other">Other</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            <textarea placeholder="Message" class="p-2 border rounded-md text-black" 
+                                name="data[message]"></textarea>
+                            <button type="submit"
+                                class="contract-button p-2 bg-[#50C878] font-semibold text-white rounded-md hover:bg-[#50C878] transition-colors">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="right md:w-1/2 mt-20 md:mt-0">
+
+                    <iframe class="w-full h-96 md:h-[400px]"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14654.06221321371!2d79.80552024429957!3d23.333329416231855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b94d1daa2077%3A0xe6463b4949c9b68b!2sKarondi%2C%20Madhya%20Pradesh%20483113!5e0!3m2!1sen!2sin!4v1709634728112!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="page-4 mt-6">
+            <div class="page-4-content">
+
+                <h1 class="text-[30px] font-bold mb-4 text-[#333333] font-bold
+                ">GOT A QUESTION?</h1>
+                <h3 class="text-md md:text-2xl mb-6" style="color: #646363;">Frequently Asked Questions</h3>
+
+                <div class="layout text-left">
+                    <!-- <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>WHY SHOULD I CHOOSE A REGISTERED DIETICIAN?</p>
+                            <i class="ri-arrow-down-double-line"></i>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>A registered dietitian has the education, expertise, and credentials to provide
+                                personalized nutrition advice and guidance. They can help you navigate complex dietary
+                                requirements, create tailored meal plans, and support you in achieving your health and
+                                wellness goals safely and effectively.</p>
+                        </div>
+                    </div> -->
+
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>HOW CAN NUTRITION COUNSELING BENEFIT ME?</p>
+                            <i class="ri-arrow-down-double-line"></i>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>Nutrition counseling offers individualized support and education to help you make
+                                informed decisions about your diet and lifestyle. Whether you're managing a medical
+                                condition, aiming for weight loss, or seeking to optimize your athletic performance, a
+                                dietitian can provide evidence-based strategies and ongoing support to help you reach
+                                your goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>WHAT MAKES PERSONALIZED NUTRITION PLANS EFFECTIVE?</p>
+                            <i class="ri-arrow-down-double-line"></i>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>Personalized nutrition plans are tailored to your unique needs, preferences, and
+                                lifestyle. By taking into account factors such as your medical history, dietary
+                                restrictions, and goals, a registered dietitian can create a plan that is sustainable,
+                                enjoyable, and effective in helping you achieve lasting results.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>HOW DOES A DIETICIAN'S APPROACH DIFFER FROM FAD DIETS?</p>
+                            <i class="ri-arrow-down-double-line"></i>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>A registered dietitian focuses on evidence-based practices and individualized care,
+                                rather than quick fixes or one-size-fits-all solutions offered by fad diets. With a
+                                dietitian, you'll receive personalized guidance and support tailored to your unique
+                                needs, ensuring sustainable and long-term improvements in your health and well-being.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sub-footer">
+                <!-- <div class="part-1">
+                    <h1>Locations</h1>
+                    <div class="map-container flex flex-col gap-4 mt-2">
+                        <div class="sm:w-[300px] md:w-[400px]">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14654.06221321371!2d79.80552024429957!3d23.333329416231855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b94d1daa2077%3A0xe6463b4949c9b68b!2sKarondi%2C%20Madhya%20Pradesh%20483113!5e0!3m2!1sen!2sin!4v1709634728112!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14654.06221321371!2d79.80552024429957!3d23.333329416231855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b94d1daa2077%3A0xe6463b4949c9b68b!2sKarondi%2C%20Madhya%20Pradesh%20483113!5e0!3m2!1sen!2sin!4v1709634728112!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div> -->
+              
+                <div class="part-4">
+                    <h1>Let's Talk</h1>
+                    <ul>
+                        <li><i class="ri-map-pin-line"></i>&nbsp; <%= admin && admin.location ? admin.location
+                                : 'Bhopal' %>
+                        </li>
+
+                        <li><i class="ri-phone-line"></i>&nbsp; <%= admin && admin.contact ? admin.contact
+                                : '78058 06867' %>
+                        </li>
+
+                        <li><i class="ri-mail-line"></i>&nbsp; <%= admin && admin.email ? admin.email
+                                : 'atultiwaridietician@gmail.com' %>
+                        </li>
+
+                        <!-- 
+                    <li><i class="ri-map-pin-line"></i>&nbsp; Office Chowdhry Mohalla near Munazir Building Katihar Bihar 854105
+                    </li>
+                    <li><i class="ri-phone-line"></i>&nbsp;8092392331</li>
+                    <li><i class="ri-phone-line"></i>&nbsp; 8100381856</li>
+                    <li><i class="ri-phone-line"></i>&nbsp; 8100391856</li> -->
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="part-1">
+                    <h1>© 2024 babashivabramhiji.online</h1>
+                </div>
+                <div class="part-2">
+                    <i class="ri-facebook-circle-fill"></i>
+                    <!-- <i class="ri-twitter-line"></i> -->
+                    <!-- <i class="ri-instagram-line"></i> -->
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="scroll-to-top" class="bounce" onclick="scrollToTop()">
+        <span>&#8593;</span>
+    </div>
+
+
+    <!-- Scroll to About page  JS -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var aboutButton = document.getElementById("about-btn");
+            var container = document.querySelector(".page-2");
+            aboutButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                container.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
+
+    <!-- Scroll to Contact page  JS -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var contactButton = document.getElementById("contact-btn");
+            var container = document.querySelector(".contact-content");
+            contactButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                container.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- FAQ Section JS -->
+    <script>
+        let answers = document.querySelectorAll(".accordion");
+        answers.forEach((event) => {
+            event.addEventListener("click", () => {
+                if (event.classList.contains("active")) {
+                    event.classList.remove("active");
+                } else {
+                    event.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+    <!-- Sidebar JS -->
+    <script src="/javascripts/sidebar.js"></script>
+
+    <!-- Scroll to top JS -->
+    <script src="/javascripts/scrollToTop.js"></script>
+
+    <script>
+        var form = document.querySelector("#sheetdb-form");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(res => res.json())
+                .then((html) => {
+                    console.log("done");
+                    form.reset();
+                    alert("Your message has been sent")
+                    submitBtn.disabled = false;
+                }).catch(error => {
+                    alert("try again");
+                    console.error('Error submitting the form:', error);
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
+
+</body>
+
+</html>
